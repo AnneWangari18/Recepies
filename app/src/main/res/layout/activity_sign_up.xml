@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/Sign_up_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/blueD1"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/Sign_up_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:textColorHint="@color/hint_white"
+        android:inputType="textWebEmailAddress"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@color/blueD1"
+        android:padding="15dp"
+        android:layout_marginTop="270dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/Sign_up_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/hint_white"
+        android:inputType="textWebPassword"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@color/blueD2"
+        android:padding="15dp"
+        android:layout_below="@id/Sign_up_email"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:background="@color/blueD3"
+        android:layout_marginTop="-6dp"
+        android:padding="15dp"
+        android:layout_below="@id/Sign_up_password"
+        style="?android:attr/borderlessButtonStyle" />
+    <TextView
+        android:id="@+id/textViewSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignUp"
+        android:text="Already have an account? Sign in here"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textColor="@color/blueD1" />
+
+</RelativeLayout>
